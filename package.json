@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "webpack --mode development --watch",
-    "build": "webpack --config webpack.config.js --watch",
+    "build": "webpack --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -19,6 +19,7 @@
     "@babel/preset-env": "^7.21.5",
     "babel-loader": "^9.1.2",
     "css-loader": "^6.7.3",
+    "dotenv-webpack": "^8.0.1",
     "mini-css-extract-plugin": "^2.7.5",
     "postcss-loader": "^7.3.0",
     "sass": "^1.62.1",

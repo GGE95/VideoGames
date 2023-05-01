@@ -1,7 +1,7 @@
 // Webpack utilise ce module Node.js pour travailler avec les dossiers.
 const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-
+const Dotenv = require('dotenv-webpack');
 
 // Ceci est la configuration principale de ton projet.
 // Ici, tu peux écrire les différentes options que tu souhaites, et dire à Webpack quoi faire.
@@ -9,7 +9,7 @@ module.exports = {
 
   // Ceci est le chemin vers le "point d'entrée" de ton app.
   // C'est depuis ce fichier que Webpack commencera à travailler.
-  entry: './src/index.js',
+  entry: './src/js/index.js',
 
   // C'est ici qu'on dit à Webpack où mettre le fichier résultant avec tout ton JS.
   output: {
@@ -77,6 +77,7 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'bundle.css',
     }),
+    new Dotenv(),
   ],
 
   // Par défaut, le mode de Webpack est "production". En fonction de ce qui est
