@@ -5,59 +5,60 @@
   <meta charset="UTF-8">
   <title>Find your video game !</title>
   <link rel="stylesheet" href="./dist/bundle.css" />
-  <!-- <link rel="icon" type="image/vnd.microsoft.icon" href='../assets/images/marianne.jpg' /> -->
 
 </head>
 
-<header>
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="bs-component">
-        <h1>The Hyper Progame</h1>
-        <form class="well form-search" id="search-by-title-form" onsubmit="return false;"></form>
-          <input type="text" id="t" name="t" class="input-small">
-        </form>
-      </div>
-    </div>
-  </div>
-</header>
-
 <body>
 
-  <a href="#">Home</a>
-  <a href="#pagelist">PageList</a>
-  <a href="#pagelist/borderlands">PageList borderlands</a>
-
-  <section id="pageContent">Choisissez un lien</section>
+  <header>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="bs-component">
+          <h1>The Hyper Progame</h1>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="bs-component search-box">
+          <form class="form-inline" id="search-by-title-form" onsubmit="return false;">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text search-icon"></span>
+              </div>
+              <input type="text" class="form-control search-input" placeholder="Find a game..." id="t" name="t">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header><br><br>
 
   <div class="row">
     <div class="col-lg-12">
       <div class="bs-component">
-        <h2>Welcome,</h2>
+        <h1>Welcome,</h1><br>
         <p>The Hyper Progame is the world’s premier event for computer and video games and related products. At The Hyper Progame, the video game industry’s top talent pack the Los Angeles Convention Center, connecting tens of thousands of the best, brightest, and most innovative in the interactive entertainment industry. For three exciting days, leading-edge companies, groundbreaking new technologies, and never-before-seen products will be showcased. The Hyper Progame connects you with both new and existing partners, industry executives, gamers, and social influencers providing unprecedented exposure.</p>
       </div>
     </div>
   </div>
-  <br><br>
-  <button id="sort" type="button" class="btn-sm btn-primary">Platform : any</button>
-  <br>
-  <div id="containerSearch" class="container"></div>
-
-  <div id="myModal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2 id="modal-title"></h2>
-      <p id="modal-year"></p>
-      <p id="modal-plot"></p>
-    </div>
-  </div>
+  <select id="platform-select" class="btn-sm btn-primary">
+    <option value="">Platform: any</option>
+    <option value="4">PlayStation</option>
+    <option value="187">Xbox</option>
+    <option value="7">Nintendo</option>
+    <option value="1">PC</option>
+  </select>  <br><br><br>
+  <div class="card-container" id="card-container"></div>
+    
 
   <script src="./dist/bundle.js"></script>
+  <br><br><br>
+  <footer><br><br>
+    <div class="row">
+      <p>Ghislain Genet @ 2023 - Fictional website for exercice. Datas from : <a href="http://api.rawg.io/docs/" target="_blank">RAWG</a></p>
+    </div>
+  </footer>
+
 </body>
-<footer>
-  <div class="row">
-    <p>Ghislain Genet @ 2023 - Fictional website for exercice</p><a href="http://api.rawg.io/docs/" target="_blank">http://api.rawg.io/docs</a>
-  </div>
-</footer>
+
 
 </html>

@@ -22,6 +22,8 @@ module.exports = {
     publicPath: '',
   },
 
+  watch: true,
+
   module: {
     rules: [
       {

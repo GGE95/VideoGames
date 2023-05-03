@@ -4,11 +4,12 @@
   "description": "",
   "dependencies": {
     "@popperjs/core": "^2.11.7",
+    "aos": "^2.3.4",
     "bootstrap": "^5.2.3"
   },
   "scripts": {
     "start": "webpack --mode development --watch",
-    "build": "webpack --config webpack.config.js",
+    "build": "webpack --config webpack.config.js --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -17,6 +18,7 @@
   "devDependencies": {
     "@babel/core": "^7.21.5",
     "@babel/preset-env": "^7.21.5",
+    "autoprefixer": "^10.4.14",
     "babel-loader": "^9.1.2",
     "css-loader": "^6.7.3",
     "dotenv-webpack": "^8.0.1",
